@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-form {
+    position: relative;
+    min-height: 100vh;
+    z-index: 0;
+    background: url(/img/hinh-background-giay-cu-vang-o.jpg);
+    background-size: cover;
+    padding: 30px;
+    justify-content: center;
+    display: grid;
+    font-family: 'Poppins', sans-serif;
+    grid-template-rows: 15fr auto 1fr;
+    align-items: center;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.login-form h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.login-form h2 {
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #272346;
+    text-align: center;
+    font-weight: bold;
+}
+.login-form .main {
+    position: relative;
+    display: flex;
+    margin: 30px 0;
+}
+.form-img {
+    flex-basis: 50%;
+    background: #dfe5ea;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    align-items: center;
+    display: grid;
+}
+.form-img img {
+    max-width: 100%;
+}
+.content {
+    flex-basis: 50%;
+    padding: 3em 3em;
+    background: #fff;
+    box-shadow: 2px 9px 49px -17px rgba(0,0,0,0.1);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 25px;
+    opacity: 0.6;
+    text-align: center;
+}
+.btn, button, input {
+    border-radius: 35px;
+}
+.btn:hover, button:hover {
+    color: #fff;
+    transition: 0.5s ease;
+}
+a {
+    text-decoration: none;
+}
+.login-form form {
+    margin: 30px 0;
+}
+.login-form input {
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #999;
+    text-align: left;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    background: #f7fafc;
+    transition: 0.3s ease;
+}
+.login-form input:focus {
+    background: transparent;
+    border: 1px solid #b30000;
+}
+.login-form button {
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    background: #b30000;
+    border: none;
+    padding: 14px 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+p.account a {
+    color: #4e34b6;
+}
+p.account a:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .social-icon {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .logoZalo{
+    width: 25px;
+  }
+@media (max-width: 736px) {
+    .login-form .main {
+        flex-direction: column;
+    }
+    .login-form form {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .form-img {
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        order: 1;
+    }
+    .content {
+        order: 2;
+        border-radius: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+}
